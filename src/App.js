@@ -1,5 +1,4 @@
 import './App.css';
-import Card from './components/Card/Card';
 import Cards from './components/Cards/Cards';
 import Nav from './components/Nav/Nav';
 import React, { useState } from 'react';
@@ -24,8 +23,6 @@ function App() {
 
    const [characters, setCharacters] = useState([]);
    const [access,setAccess] = useState(false);
-   const EMAIL= 'lauracayuela91@gmail.com'
-   const PASSWORD = 'lala123'
    const navigate = useNavigate();
    
   

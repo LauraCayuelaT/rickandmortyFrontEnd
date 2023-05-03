@@ -4,7 +4,7 @@ import { orderCards, filterCards} from "../../Redux/actions";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { ContenedorCarta, Contenedor, Lista} from "./FavoritesStyle";
-import { useEffect } from "react";
+
 
 
 const Favorites = ({ myFavorites })=>{

@@ -10,7 +10,7 @@ export default function Cards(props) {
    useEffect(()=>{
       
       dispatch(getFavorites())
-  },[])
+  },[dispatch])
 
    const { characters } = props;
    

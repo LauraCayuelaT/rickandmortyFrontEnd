@@ -34,7 +34,7 @@ export const GET_FAVORITES="GET_FAVORITES"
                   payload: data,
                });
       }
-      catch(err){throw new Error}
+      catch(err){throw new Error()}
 
    }
 

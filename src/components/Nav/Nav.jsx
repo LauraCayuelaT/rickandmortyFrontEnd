@@ -10,7 +10,7 @@ const Nav = (props)=>{
     const random = ()=> {
         const min=1;
         const max=826;
-        const rand = Math.floor(Math.random()*(826-1) + 1);
+        const rand = Math.floor(Math.random()*(max-min) + 1);
         setId(rand)
         
 
