@@ -12,6 +12,10 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom"
 import Favorites from './components/Favorites/Favorites';
+import axios from "axios";
+
+// axios.defaults.baseURL="http://localhost:3001/rickandmorty"
+axios.defaults.baseURL="https://rickandmortybackend-production.up.railway.app/"
 
 
 
@@ -45,7 +49,7 @@ function App() {
 
    async function login(userData){
       const { email, password } = userData;
-      const URL = 'http://localhost:3001/rickandmorty/login/';
+      const URL = '/login/';
 
       try{
          const response = await axios(URL + `?email=${email}&password=${password}`)
@@ -79,7 +83,7 @@ function App() {
       
    async function onSearch(id){
       try {
-         const response = await axios.get(`http://localhost:3001/rickandmorty/character/${id}`);
+         const response = await axios.get(`/character/${id}`);
          const { data } = response;
          if(data.name && !characters.find(char=>char.id===data.id)) {
                      setCharacters((oldData)=>[...oldData,data]) //Aqui estamos haciendo algo importante y es no tocar directamente el estado
