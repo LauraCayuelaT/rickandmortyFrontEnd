@@ -12,7 +12,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom"
 import Favorites from './components/Favorites/Favorites';
-import axios from "axios";
+
 
 // axios.defaults.baseURL="http://localhost:3001/rickandmorty"
 axios.defaults.baseURL="https://rickandmortybackend-production.up.railway.app/"
